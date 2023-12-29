@@ -13,6 +13,12 @@
 		042D19802B3C67560050EB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042D197E2B3C67560050EB40 /* Main.storyboard */; };
 		042D19822B3C67570050EB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042D19812B3C67570050EB40 /* Assets.xcassets */; };
 		042D19852B3C67570050EB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042D19832B3C67570050EB40 /* LaunchScreen.storyboard */; };
+		042D198D2B3C6BFB0050EB40 /* TimeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D198C2B3C6BFB0050EB40 /* TimeSelectViewController.swift */; };
+		042D198F2B3C88F10050EB40 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D198E2B3C88F10050EB40 /* TimerViewController.swift */; };
+		0441178D2B3D763500182ABD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441178C2B3D763500182ABD /* ResultViewController.swift */; };
+		0441178F2B3D814C00182ABD /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441178E2B3D814C00182ABD /* LaunchViewController.swift */; };
+		046EC2292B3F55B10001BF7D /* rclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 046EC2272B3F55B10001BF7D /* rclick.wav */; };
+		046EC22A2B3F55B10001BF7D /* lclick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 046EC2282B3F55B10001BF7D /* lclick.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		042D19812B3C67570050EB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042D19842B3C67570050EB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042D19862B3C67570050EB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042D198C2B3C6BFB0050EB40 /* TimeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectViewController.swift; sourceTree = "<group>"; };
+		042D198E2B3C88F10050EB40 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		0441178C2B3D763500182ABD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		0441178E2B3D814C00182ABD /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		046EC2272B3F55B10001BF7D /* rclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rclick.wav; sourceTree = "<group>"; };
+		046EC2282B3F55B10001BF7D /* lclick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lclick.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,26 @@
 				042D19782B3C67560050EB40 /* AppDelegate.swift */,
 				042D197A2B3C67560050EB40 /* SceneDelegate.swift */,
 				042D197C2B3C67560050EB40 /* ViewController.swift */,
+				042D198C2B3C6BFB0050EB40 /* TimeSelectViewController.swift */,
+				042D198E2B3C88F10050EB40 /* TimerViewController.swift */,
+				0441178C2B3D763500182ABD /* ResultViewController.swift */,
 				042D197E2B3C67560050EB40 /* Main.storyboard */,
 				042D19812B3C67570050EB40 /* Assets.xcassets */,
 				042D19832B3C67570050EB40 /* LaunchScreen.storyboard */,
 				042D19862B3C67570050EB40 /* Info.plist */,
+				0441178E2B3D814C00182ABD /* LaunchViewController.swift */,
+				046EC2222B3F545D0001BF7D /* Sounds */,
 			);
 			path = ChessTimer;
+			sourceTree = "<group>";
+		};
+		046EC2222B3F545D0001BF7D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				046EC2282B3F55B10001BF7D /* lclick.wav */,
+				046EC2272B3F55B10001BF7D /* rclick.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +153,8 @@
 			files = (
 				042D19852B3C67570050EB40 /* LaunchScreen.storyboard in Resources */,
 				042D19822B3C67570050EB40 /* Assets.xcassets in Resources */,
+				046EC2292B3F55B10001BF7D /* rclick.wav in Resources */,
+				046EC22A2B3F55B10001BF7D /* lclick.wav in Resources */,
 				042D19802B3C67560050EB40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042D198F2B3C88F10050EB40 /* TimerViewController.swift in Sources */,
 				042D197D2B3C67560050EB40 /* ViewController.swift in Sources */,
 				042D19792B3C67560050EB40 /* AppDelegate.swift in Sources */,
 				042D197B2B3C67560050EB40 /* SceneDelegate.swift in Sources */,
+				042D198D2B3C6BFB0050EB40 /* TimeSelectViewController.swift in Sources */,
+				0441178F2B3D814C00182ABD /* LaunchViewController.swift in Sources */,
+				0441178D2B3D763500182ABD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
